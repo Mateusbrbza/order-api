@@ -1,11 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                  
-    "module": "commonjs", 
+    "allowJs": true,
+    "alwaysStrict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true, 
-    "strict": true,
+    "isolatedModules": true,
+    "target": "es2016",
+    "module": "commonjs",
     "skipLibCheck": true,
-    "outDir": "dist",
-  }
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": false,
+    "declaration": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "incremental": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "./src"]
 }
